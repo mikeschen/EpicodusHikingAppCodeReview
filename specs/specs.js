@@ -1,4 +1,3 @@
-
 describe('Hike', function() {
   it("creates a new hike suggestion with the given drive, distance, views, popularity, difficulty", function() {
     var testHike =  new Hike(10, 5, "waterfall", "medium", "hard");
@@ -8,8 +7,7 @@ describe('Hike', function() {
     expect(testHike.popularity).to.equal("medium");
     expect(testHike.difficulty).to.equal("hard");
   });
-  it("creates a suggestion of Multnomah Falls when it equals waterfall and viewpoint views and difficulty medium and popularity high"), function() {
-      expect().to.equal();
-
-  }
+  it("has a testHike equal finalDestination array", function() {
+      expect(testHike.hikeFinder()).to.eql(["drive:30", "distance:2.6", "views:waterfall", "popularity:high", "difficulty:medium"]);
+  });
 });
