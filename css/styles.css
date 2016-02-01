@@ -1,20 +1,26 @@
-a {
-  text-align: center;
-  text-decoration: none;
-  margin: 0 auto;
-}
-
 a:hover {
   color: red;
 }
 
 img {
-  width: 500px;
+  width: 570px;
+}
+
+ul {
+  font-style: italic;
+}
+
+ul li {
+  font-style: normal;
 }
 
 .col-sm-6 {
   margin-top: 20px;
   text-align: center;
+}
+
+.details {
+  margin: 20px;
 }
 
 .jumbotron {
@@ -24,9 +30,4 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-}
-
-/*#map {
-  height: 25%;
-  width: 25%;*/
 }
