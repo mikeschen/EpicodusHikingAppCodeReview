@@ -5,3 +5,7 @@ function Hike(drive, distance, views, popularity, difficulty) {
   this.popularity = popularity;
   this.difficulty = difficulty;
 }
+
+Hike.prototype.views = function() {
+	return;
+};
