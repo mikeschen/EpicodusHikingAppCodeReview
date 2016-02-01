@@ -7,13 +7,15 @@ function Hike(drive, distance, views, popularity, difficulty) {
 }
 
 Hike.prototype.hikeFinder = function() {
+	var finalDestination = [];
 	if (this.distance<35  && this.distance<5 && this.views === "waterfall" && this.popularity === "high" && this.difficulty === "medium") {
 		var i = 0;
 		for(i in multnomah) {
 			if (multnomah.hasOwnProperty(i)) {
-			console.log(i + ":" + multnomah[i]);  //add .append here
+			finalDestination.push(i + ":" + multnomah[i]);  //add .append here
 			}
 		}
+		return finalDestination;
 	}
 };
 
