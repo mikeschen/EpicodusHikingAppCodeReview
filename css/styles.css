@@ -1,5 +1,10 @@
 a:hover {
-  color: red;
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  color: #2d862d;
 }
 
 img {
@@ -17,7 +22,12 @@ ul li {
 
 .btn {
   background-color: #eee;
-  color: red;
+  color: #2d862d;
+}
+
+button:hover {
+  background-color: #eee;
+  color: black;
 }
 
 .col-sm-6 {
