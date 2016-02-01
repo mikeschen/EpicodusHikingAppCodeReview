@@ -8,6 +8,15 @@ a:hover {
   color: red;
 }
 
+img {
+  width: 500px;
+}
+
+.col-sm-6 {
+  margin-top: 20px;
+  text-align: center;
+}
+
 .jumbotron {
   text-align: center;
   background-image: url(../images/hike2.jpg);
