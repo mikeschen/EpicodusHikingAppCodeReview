@@ -34,13 +34,18 @@ Hike.prototype.distance = function() {
 }
 
 Hike.prototype.hikeFinder = function() {
+
+	var finalDestination = [];
+
 	if (this.drive === "medium"  && this.distance === "short" && this.views === "waterfall" && this.popularity === "high" && this.difficulty === "medium") {
+
 		var i = 0;
 		for(i in multnomah) {
 			if (multnomah.hasOwnProperty(i)) {
-			console.log(i + ":" + multnomah[i]);  //add .append here
+			finalDestination.push(i + ":" + multnomah[i]);  //add .append here
 			}
 		}
+		return finalDestination;
 	}
 };
 
