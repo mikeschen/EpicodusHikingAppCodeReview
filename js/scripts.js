@@ -35,7 +35,7 @@ Hike.prototype.distance = function() {
 }
 
 Hike.prototype.hikeFinder = function() {
-	if (this.distance<35  && this.distance<5 && this.views === "waterfall" && this.popularity === "high" && this.difficulty === "medium") {
+	if (this.drive === "medium"  && this.distance === "short" && this.views === "waterfall" && this.popularity === "high" && this.difficulty === "medium") {
 		var i = 0;
 		for(i in multnomah) {
 			if (multnomah.hasOwnProperty(i)) {
