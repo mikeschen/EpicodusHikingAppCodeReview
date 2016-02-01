@@ -4,6 +4,7 @@ a:hover {
 
 img {
   width: 570px;
+  height: 400px;
 }
 
 ul {
@@ -17,6 +18,7 @@ ul li {
 .col-sm-6 {
   margin-top: 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .details {
@@ -30,4 +32,9 @@ ul li {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+}
+
+#map {
+  width: 570px;
+  height: 400px;
 }
