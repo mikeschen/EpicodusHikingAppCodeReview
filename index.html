@@ -10,46 +10,42 @@
   <body>
     <div class="container">
       <h1>Take A Hike!</h1>
-      <label>Transportation</label>
-        <div class="checkbox transpo">
-          <label><input type="checkbox" value="Bus">Bus</label>
-        </div>
-        <div class="checkbox transpo">
-          <label><input type="checkbox" value="Car">Car</label>
-        </div>
+      <div class="form-group">
+        <label for="distance">Select distance from Portland (Miles):</label>
+        <select class="form-control" id="distance">
+          <option>&#62; 10</option>
+          <option>10-30</option>
+          <option>30-50</option>
+          <option>&#60; 50</option>
+        </select>
+      </div>
 
-      <label>Difficulty</label>
-        <div class="checkbox difficulty">
-          <label><input type="checkbox" value="Easy">Easy</label>
-        </div>
-        <div class="checkbox difficulty">
-          <label><input type="checkbox" value="Medium">Medium</label>
-        </div>
-        <div class="checkbox difficulty">
-          <label><input type="checkbox" value="Hard">Hard</label>
-        </div>
+      <div class="form-group">
+        <label for="distance">Select Difficulty:</label>
+        <select class="form-control" id="difficulty">
+          <option>Easy</option>
+          <option>Moderate</option>
+          <option>Hard</option>
+        </select>
+      </div>
 
-        <label>Attractions</label>
-          <div class="checkbox attractions">
-            <label><input type="checkbox" value="Waterfalls">Waterfalls</label>
-          </div>
-          <div class="checkbox attractions">
-            <label><input type="checkbox" value="Views">Views</label>
-          </div>
-          <div class="checkbox attractions">
-            <label><input type="checkbox" value="Wildlife">Wildlife</label>
-          </div>
+      <div class="form-group">
+        <label for="distance">Attractions:</label>
+        <select class="form-control" id="attractions">
+          <option>Views</option>
+          <option>Waterfalls/rivers</option>
+          <option>Wildlife</option>
+        </select>
+      </div>
 
-          <label>Popularity</label>
-            <div class="checkbox popularity">
-              <label><input type="checkbox" value="Heavy">Heavy</label>
-            </div>
-            <div class="checkbox popularity">
-              <label><input type="checkbox" value="Moderate">Moderate</label>
-            </div>
-            <div class="checkbox popularity">
-              <label><input type="checkbox" value="Light">Light</label>
-            </div>
+      <div class="form-group">
+        <label for="distance">Popularity:</label>
+        <select class="form-control" id="popularity">
+          <option>High</option>
+          <option>Moderate</option>
+          <option>Low</option>
+        </select>
+      </div>
 
     </div>
   </body>
