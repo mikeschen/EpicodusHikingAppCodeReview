@@ -9,7 +9,7 @@ describe('Hike', function() {
     expect(testHike.difficulty).to.equal("hard");
   });
   it("creates a suggestion of Multnomah Falls when it equals waterfall and viewpoint views and difficulty medium and popularity high"), function() {
-      expect().to.equal();
+      expect(testHike).to.equal("multnomah");
 
   }
 });
