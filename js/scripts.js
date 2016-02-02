@@ -21,6 +21,7 @@ function arraysEqual(testHike, Hikes) {
       nameHike.push(hike);
     }
   }
+  return nameHike;
 };
 
 function randomHike(nameHike) {
@@ -34,7 +35,6 @@ $(document).ready(function() {
     var hikeParametersArray = [];
     $("select:selected").each(function() {
       hikeParametersArray.push($(this).val());
-
     });
     var compareHikes = arraysEqual(hikeParametersArray, Hikes);
     console.log(compareHikes);
