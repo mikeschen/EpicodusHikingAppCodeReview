@@ -36,7 +36,7 @@
       </div>
       <div class="col-sm-6">
         <ul>Directions From Portland:
-          <li>Travel Time: approximately 90 minues (89 Miles from Portland)</li>
+          <li>Travel Time: approximately 90 minutes (54 Miles from Portland)</li>
           <li>Follow I-84 E/U.S. 30 E and I-205 S to Clackamas County. Take exit 14 from I-205 S</li>
           <li>Get on US-26 E/Mt Hood Hwy in Boring from SE Sunnyside Rd and OR-212 E/SE Hwy 212</li>
           <li>Merge onto US-26 E/Mt Hood Hwy
@@ -54,8 +54,13 @@
         var map;
         function initMap() {
           map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 45.29741, lng: -121.79349},
+            center: {lat: 45.2974, lng: -121.7934},
             zoom: 15
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.2974, lng: -121.7934},
+            map: map,
           });
         }
       </script>
