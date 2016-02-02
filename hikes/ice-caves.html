@@ -14,44 +14,54 @@
          padding: 0;
        }
     </style>
-    <title>Lookout Mountain</title>
+    <title>Trout Lake Ice Cave</title>
   </head>
 
   <body>
     <div class="jumbotron">
-      <h1>Lookout Mountain</h1>
+      <h1>Trout Lake Ice Cave</h1>
     </div>
       <p class="details">At over 6,500 feet, Lookout Mountain is much higher than most of the smaller peaks that surround Mount Hood. In fact, it is the second highest peak in the Mt. Hood National Forest. The added elevation brings broad meadows, expansive views, alpine wildflowers and ancient whitebark pines to the scene. The view of Mount Hood, just seven miles to the west, is from a unique perspective that reveals the massive bulk of the mountain</p>
-      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Lookout_Mountain">Plan Your Trip</a>
+      <p class="text-center"><a href="http://www.fs.usda.gov/recarea/giffordpinchot/recarea/?recid=31794">Plan Your Trip</a>
       </p>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <ul>Trail Aspects:
-          <li>Exertion: Easy, 2.5 Miles Round-Trip</li>
-          <li>Sights: Views of the Cascade Range, wildflowers, Central Oregon desert</li>
-          <li>Popularity: Moderate</li>
-          <li>Open: All Year</li>
+          <li>Exertion: Difficult, 0.25 Miles Round-Trip</li>
+          <li>Sights: Ice stalagtites and stalagmites, cave creatures</li>
+          <li>Popularity: Low</li>
+          <li>Open: May - September</li>
         </ul>
         <ul>Fees:
           <li>$5 NW Pass (Available at the trailhead)</li>
         </ul>
-
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-4">
+        <ul>Ammenities:
+          <li>Bathrooms</li>
+          <li>Picnic Area</li>
+        </ul>
+        <ul>Prepare! The caves are FREEZING even in the summer; make sure to bring:
+          <li>Coats</li>
+          <li>Headlights/Flashlights</li>
+          <li>Good climbing shoes with traction (these are ICE caves)</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
         <ul>Directions From Portland:
-          <li>Travel Time: Approximately 120 minutes from downtown</li>
+          <li>Travel Time: Approximately 100 minutes from downtown</li>
           <li>Get on I-84 E to Hood River</li>
-          <li>Take Highway 35 S towards Mt. Hood for 25 miles.</li>
-          <li>At MilePost 71 turn left, onto paved FS 44 to Lookout Mountain</li>
-          <li>Continue another 3.7 miles, turn right at the "High Prairie" sign onto gravel FS 4410</li>
-          <li>Continue for 4.7 miles on this road, until you reach a T-junction at which you'll turn left.</li>
-          <li>Continue on this road for a few hundred yards to the trailhead. </li>
+          <li>Cross the Hood River Bridge to the Washington side</li>
+          <li>Go left onto Highway 14, and follow it onto Highway Alt 14</li>
+          <li>Drive north for 21 miles to Trout Lake</li>
+          <li>Stay left at the gas station, driving another 6.5 miles</li>
+          <li>Keep straight when 141 becomes FS 24. Look for the Ice Cave sign and turn left into the parkingl lot</li>
         </ul>
       </div>
     </div>
 
     <div class="col-sm-6">
-      <img src="../images/lookout.jpg">
+      <img src="../images/ice-caves.jpg">
     </div>
 
     <div class="col-sm-6" id="map">
@@ -59,14 +69,14 @@
         var map;
         function initMap() {
           var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 45.3425, lng: -121.5242},
-            zoom: 10
+            center: {lat: 45.9610, lng: -121.6325},
+            zoom: 12
           });
 
           var marker = new google.maps.Marker({
-            position: {lat: 45.3425, lng: -121.5242},
+            position: {lat: 45.9610, lng: -121.6325},
             map: map,
-            title: "Lookout Mountain"
+            title: "Trout Creek Ice Caves"
           });
         }
       </script>

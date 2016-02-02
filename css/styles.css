@@ -7,9 +7,13 @@ a {
   color: #2d862d;
 }
 
+body {
+  margin-bottom: 30px;
+}
+
 img {
-  width: 570px;
-  height: 400px;
+  width: 500px;
+  height: 430px;
 }
 
 ul {
@@ -49,6 +53,6 @@ button:hover {
 }
 
 #map {
-  width: 570px;
-  height: 400px;
+  width: 500px;
+  height: 430px;
 }
