@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Memaloose Lake</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Memaloose Lake</h1>
+      <p></p>
+    </div>
+      <p class="details">Your hike begins in a majestic forest of old-growth Douglas-fir. Oxalis and vanilla leaf carpet the floor as you climb alongside Memaloose Creek. In less than a mile, you will turn away from the creek and begin switchbacking up the steep hillside to the lake basin. As you climb away from the creek, the trees start to get smaller and the understory changes to beargrass and rhododendron. When you hear the creek again, it is emerging from the lake, and you will arrive at Memaloose Lake. This is a shallow swimmable lake, ideal for cooling off in the heat of the summer.</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Memaloose_Lake_Hike">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Easy, 2.6 miles round trip</li>
+          <li>Sights: Old growth Douglas Firs; Memaloose Lake.</li>
+          <li>Popularity: High</li>
+          <li>Open: Spring through fall</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: approximately 1 hour (89 Miles from Portland)</li>
+          <li> I-205 S and Redland Rd to S Springwater Rd in Clackamas County</li>
+          <li>Follow S Springwater Rd to OR-211 S.  Drive to NF-45</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/memalooselake.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.0987, lng: -122.2376},
+            zoom: 16
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+
+</html>
