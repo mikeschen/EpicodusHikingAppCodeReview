@@ -23,6 +23,13 @@ function arraysEqual(testHike, Hikes) {
   }
 };
 
+function randomHike(nameHike) {
+  var hike = nameHike[Math.floor(Math.random()*nameHike.length)];
+}
+
+var compareHikes = arraysEqual(testHike, Hikes);
+var hike = randomHike(nameHike);
+
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
@@ -30,9 +37,9 @@ $(document).ready(function() {
     var hikeParametersArray = [];
     $("select:selected").each(function() {
       hikeParametersArray.push($(this).val());
+
     });
     var compareHikes = arraysEqual(hikeParametersArray, Hikes);
     console.log(compareHikes);
   });
 });
-
