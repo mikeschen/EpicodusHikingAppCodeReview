@@ -33,24 +33,22 @@ Hike.prototype.distance = function() {
   return distance;
 }
 
-Hike.prototype.hikeFinder = function() {
-
-	var finalDestination = [];
-
-	if (this.drive === "medium"  && this.distance === "short" && this.views === "waterfall" && this.popularity === "high" && this.difficulty === "medium") {
-
-		var i = 0;
-		for(i in multnomah) {
-			if (multnomah.hasOwnProperty(i)) {
-			finalDestination.push(i + ":" + multnomah[i]);  //add .append here
-			}
-		}
-		return finalDestination;
-	}
-};
 
 var multnomah = new Hike("medium", "short", "waterfall", "high", "medium");
 
 var testHike = new Hike("medium", "short", "waterfall", "high", "medium");
 
 testHike.hikeFinder();
+
+
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+
+    var hikeParametersArray = [];
+    $("select:selected").each(function() {
+      hikeParametersArray.push($(this).val());
+      
+    });
+  });
+});
