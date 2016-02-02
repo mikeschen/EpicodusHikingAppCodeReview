@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Lower Macleay Park</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Lower Macleay Park to Pittock Mansion</h1>
+    </div>
+      <p class="details">Macleay Park feels like Rivendale from Lord of the Rings. The trail runs alongside a creek, where everything is wet and green and alive. Several immense trees that fell decades-to-centuries ago are wedged above the creek.  This trail is GORGEOUS. It connects to the Wildwood trail, which can be taken up to Pittock Mansion and even as far out as Hoyt Arboretum if you really want to go for it. <br>
+      Tip: There aren't trail markers once you connect to Pittock Mansion to remind you to get back on the right trail that will take you back to Macleay. Don't get lost out there.</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Lower_Macleay_Park_Trailhead">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-4">
+        <ul>Trail Aspects:
+          <li>Exertion: Moderate, 5 Miles Round-Trip</li>
+          <li>Sights: Views of Downtown Portland</li>
+          <li>Popularity: Moderate</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <ul>Ammenities at the Mansion:
+          <li>Bathrooms</li>
+          <li>Gift Shop</li>
+          <li>Tour the Historic <a href="http://pittockmansion.org/visit-the-mansion/">Pittock Mansion</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 10 minutes from downtown</li>
+          <li>Get on I-5 S to 405 S (Fremont Bridge)</li>
+          <li>Take the Highway 30 W exit towards St.Helens, exit immediately onto Vaughn St.</li>
+          <li>Turn Left at the first light on NW 23rd, right onto Thurman Ave, right onto NW 28th, left onto Upshur.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/macleay.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.53611, lng: -122.71248},
+            zoom: 14
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>
