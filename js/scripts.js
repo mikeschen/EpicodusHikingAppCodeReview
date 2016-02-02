@@ -1,20 +1,35 @@
 var testHike = ["medium", "short", "high", "medium"];
-var testHike2 = ["short", "medium", "medium", "high"];
 
-var multnomahs = ["medium", "short", "high", "medium"];
-var macleays = ["short", "medium", "medium", "medium"];
-var tryon = ["short", "short", "high", "easy"];
-var hikeArray = [multnomahs, macleays];
+var Hikes = {
+  macleays: ["short", "medium", "medium", "low"],
+  multnomahs: ["medium", "short", "high", "medium"],
+};
 
-function arraysEqual(a, b) {
-  if (a === b) return true;
-  if (a == null || b == null) return false;
-  if (a.length != b.length) return false;
-
-  for (var i = 0; i < a.length; ++i) {
-    if (a[i] !== b[i]) return false;
+function arraysEqual(testHike, Hikes) {
+  for (hike in Hikes) {
+      if (testHike === Hikes[hike]) {
+        return hike;
+      }
   }
-  return true;
-}
+};
 
-arraysEqual(testHike, multnomahs);
+arraysEqual(testHike, Hikes);
+
+      //if (a === b) return true;
+      //if (a == null || b == null) return false;
+      //if (a.length != b.length) return false;
+
+
+      function arraysEqual(testHike, Hikes) {
+  for (hike in Hikes) {
+    console.log(hike);
+    for (var i = 0; i < testHike.length; i++) {
+        console.log(testHike[i]);
+        console.log(hike[i]);
+
+        if (testHike[i] === hike) {
+          return true;
+        }
+    }
+  }
+};
