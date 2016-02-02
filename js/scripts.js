@@ -25,7 +25,7 @@ function arraysEqual(testHike, Hikes) {
 };
 
 function randomHike(nameHike) {
-  var hike = nameHike[Math.floor(Math.random()*nameHike.length)];
+  return nameHike[Math.floor(Math.random()*nameHike.length)];
 }
 
 $(document).ready(function() {
