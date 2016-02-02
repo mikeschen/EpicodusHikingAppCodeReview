@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Lacamas Heritage Trail</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Lacamas Heritage Trail</h1>
+    </div>
+      <p class="details">This wide, flat trail, which runs along one shore of Lacamas Lake, attracts lots of joggers, walkers, and cyclists on nice days. There are a number of interpretive signs along the trail. This hike can be done all year, but the best times are when water levels are high. Native wildflowers bloom in profusion along the trail in spring.</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Lacamas_Heritage_Trail_Hike">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-4">
+        <ul>Trail Aspects:
+          <li>Exertion: Easy, (up to) 7.0 Miles In and Out </li>
+          <li>Sights: Lacamas Creek, wildflowers in the spring</li>
+          <li>Popularity: Moderate</li>
+          <li>Open: All Year</li>
+        </ul>
+        <ul>Ammenities:
+          <li>Bathrooms</li>
+          <li>Picnic Area</li>
+          <li>Playground</li>
+          <li>Wheelchair Access</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 35 minutes from downtown</li>
+          <li>Get on I-205 N to exit 27 to Highway 14 (towards Camus)</li>
+          <li>Stay on Highway 14 for 8.1 miles, take Exit 12 to downtown Camus</li>
+          <li>After a mile, turn right then quickly left through downtown Camus</li>
+          <li>From the Safeway on 3rd go East for 0.3 miles, take a Left onto NE Garfield</li>
+          <li>Turn left onto NE 14th</li>
+          <li>Turn right on NE Everett St., and then a left onto NW Lake Rd.</li>
+          <li>After 0.3 miles take a right into the park's parking lot</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/lacamas.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.6365, lng: -122.4597},
+            zoom: 14
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.6365, lng: -122.4597},
+            map: map,
+            title: "Lacamas Heritage Trail"
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>
