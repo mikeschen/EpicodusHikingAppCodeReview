@@ -1,15 +1,21 @@
-var testHike = ["medium", "short", "high", "medium"];
+var testHike = ["short", "short", "high", "easy"];
 
 var Hikes = {
-  macleays: ["short", "medium", "medium", "low"],
+  macleays: ["short", "medium", "medium", "medium"],
+  tryon: ["long", "short", "high", "easy"],
   multnomahs: ["medium", "short", "high", "medium"],
 };
 
+var nameHike;
+
 function arraysEqual(testHike, Hikes) {
   for (hike in Hikes) {
-      if (testHike === Hikes[hike]) {
+    for (i = 0; i < 4; i++) {
+      if (testHike[i] !== Hikes[hike][i]) {
+        continue;
         return hike;
       }
+    }
   }
 };
 
