@@ -36,7 +36,7 @@
       </div>
       <div class="col-sm-6">
         <ul>Directions From Portland:
-          <li>Travel Time: approximately 1 hour (89 Miles from Portland)</li>
+          <li>Travel Time: approximately 1 hour (78 Miles from Portland)</li>
           <li> I-205 S and Redland Rd to S Springwater Rd in Clackamas County</li>
           <li>Follow S Springwater Rd to OR-211 S.  Drive to NF-45</li>
         </ul>
@@ -54,6 +54,11 @@
           map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: 45.0987, lng: -122.2376},
             zoom: 16
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.0987, lng: -122.2376},
+            map: map,
           });
         }
       </script>

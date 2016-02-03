@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Marquam Narture Park</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Marquam Nature Park</h1>
+    </div>
+      <p class="details">The northern section of this Portland City park borders on the Oregon Health Sciences University Campus off of Sam Jackson Parkway and Terwilliger Boulevard and encompasses two ravines on the slopes of Marquam Hill. The park is named after Philip Marquam, who was a Multnomah County judge in the 1860s and later served in the Oregon State Legislature. Longer hikes are possible as the Marquam Trail runs through here and up to Council Crest, eventually connecting to the Wildwood Trail just north of the Oregon Zoo. The Marquam Trail is part of Portland's 40-mile Loop.</p>
+      <p class="text-center"><a href="http://www.oregonhiking.com/oregon-adventures/100-hikes-on-the-oregon-coast/north-coast-hikes/tillamook-head-hike">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-4">
+        <ul>Trail Aspects:
+          <li>Exertion: Easy, 3 Miles Round-Trip with more challenging options</li>
+          <li>Sights: Ocean Views</li>
+          <li>Popularity: Moderate</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <ul>Ammenities at the Mansion:
+          <li>Bathrooms</li>
+          <li>Wheelchair Access</li>
+          <li>Bus Line from Downtown: 12, 44, 19</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 100 minutes (79 miles from downtown)</li>
+          <li>Take US-26 W</li>
+          <li>Turn left onto OR-6 towards Banks, Tillamook</li>
+          <li>Turn left onto Goodspeed Pl.</li>
+          <li>At the end of the road, turn right onto 3rd Ave, and continue until you reach the destination (well-marked)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/tillamook.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.9415, lng: -123.9568},
+            zoom: 13
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.9415, lng: -123.9568},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>
