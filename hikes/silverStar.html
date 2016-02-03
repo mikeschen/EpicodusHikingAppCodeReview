@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Silver Star Mountain</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Silver Star Mountain</h1>
+    </div>
+      <p class="details">Silver Star Mountain is an extinct volcano in the southwestern Cascade Mountains in the U.S. state of Washington, named for the pattern of five prominent ridges that radiate from the summit in the shape of a star.</p>
+      <p class="text-center"><a href="http://www.nwhiker.com/GPNFHike51.html">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Moderate, 8 Miles Round-Trip</li>
+          <li>Sights: Views of Mt. Adams, Cascade wilderness</li>
+          <li>Popularity: Low</li>
+          <li>Open: April - October</li>
+        </ul>
+        <ul>Fees:
+          <li>$5 NW Pass (available at the trailhead)</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 65 minutes (40 miles from downtown)</li>
+          <li>Take I-205 N onto Highway 14 E</li>
+          <li>In Washougal, find Washougal River Rd at milepost 16</li>
+          <li>Go north to milepost 6.5, turn left onto Hughes Rd. (just before Vernon Bridge)</li>
+          <li>Take a left onto Skamania Mines Rd. Pavement ends, continue on the gravel road for another 1.4 miles to the junction</li>
+          <li>Stay left on FS 1200 and then left again in 200 yards</li>
+          <li>In 5.8 miles, park at the obvious ridgetop parking lot</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/silverStar.JPG">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.7673, lng: -122.2433},
+            zoom: 10
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.7673, lng: -122.2433},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>
