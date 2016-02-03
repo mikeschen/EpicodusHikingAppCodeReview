@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Elowah Falls</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Elowah Falls</h1>
+    </div>
+      <p class="details">The Eagle Creek trailhead is a busy place most weekends. Here sits the jump-off point for a half-dozen trails. In addition to Eagle Creek hikers, it accommodates PCT thru-hikers, locals who enjoy the day-use picnic area, site-seers enjoying the nearby fish hatcheries, and campers at nearby Eagle Creek Campground.</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Elowah_Falls_Hike">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: easy, 3.3 Miles Round-Trip</li>
+          <li>Sights: Elowah Falls</li>
+          <li>Popularity: Low</li>
+          <li>Open: All (Closed durling winter storms)</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 30 minutes (36 miles from downtown)</li>
+          <li>Take I-84 E to exit 35</li>
+          <li>At the stop sign, go left, then immediately right onto Frontage Rd</li>
+          <li>Stay on this road for 2 miles to the Yeon State Park (just before the highway entrance)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/elowah.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.6131, lng: -121.9990},
+            zoom: 13
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.6131, lng: -121.9990},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>
