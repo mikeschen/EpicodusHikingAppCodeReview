@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Falls Creek Falls</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Falls Creek Falls</h1>
+      <p></p>
+    </div>
+      <p class="details">The first half mile of the hike has several points where you and the kids can scramble down to the creek bed. Smooth rocks and several small pools invite wading, but the water remains icy cold through the summer.</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Falls_Creek_Falls_Loop_Hike">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Easy, 2 miles round trip with longer/more difficult options</li>
+          <li>Sights: 3-tier waterfall, old-growth forest</li>
+          <li>Popularity: Low</li>
+          <li>Open: April - December</li>
+        </ul>
+        <ul>Fees:
+          <li>$5 NW pass (available at trailhead)</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: approximately 70 minutes (66 Miles from Portland)</li>
+          <li>Get on I-84 E </li>
+          <li>Take Exit 44 and cross the Bridge of the Gods (clearly marked)</li>
+          <li>Continue on Highway 14 until milepost 47.5</li>
+          <li>Turn onto Wind River Rd, continue until you reach the 4-way stop marked by a blinking red light, continue straight for 13 miles</li>
+          <li>Just past the fish hatchery, turn right to stay on Wind River Rd. for another 0.8 miles</li>
+          <li>The road forks here; follow signs for the trail at FS 3062</li>
+          <li>Turn right, and follow the gravel road for 2.2 miles and continue following signs for the "Upper Falls trailhead" at the end of this road</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/falls-creek.jpeg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.9094, lng: -121.9127},
+            zoom: 9
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.9094, lng: -121.9127},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>
