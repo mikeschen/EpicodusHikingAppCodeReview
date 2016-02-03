@@ -41,7 +41,8 @@ $(document).ready(function() {
     console.log(compareHikes);
     hike = randomHike(compareHikes);
     console.log(hike);
-    document.location = "../hikes/" + hike + ".html";
+    window.location.href = "http://mikeschen.github.io/epicodushikingapp/hikes/" + hike + ".html";
+
 
   });
 });
