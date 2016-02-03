@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Marshall Park</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Marshall Park</h1>
+    </div>
+      <p class="details">A waterfall as magnificent and memorable as any in the country is located just a 30- minute drive outside of Portland. Visiting Multnomah Falls, a 611-foot-tall roaring, awe-inspiring cascade of icy water, lets you experience the power and beauty of nature up close and with ease. From the parking area off of I-84, a 5-minute walk is all that separates you from the exhilarating spray at the base of the falls.</p>
+
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Marshall_Park_Hike">Plan Your Trip</a>
+
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Easy, 1.4 Miles Round-Trip</li>
+          <li>Sights: Tyron creek, cool bridges, old growth.</li>
+          <li>Popularity: Low</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 10 minutes (6 Miles from Portland)</li>
+          <li>Gake I-5 S to SW Barbur Blvd/Pacific Hwy W. Take exit 296A from I-5 S</li>
+          <li>Take SW Spring Garden St and SW 17th Ave to SW 18th Pl</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/marshallPark.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.45659, lng: -122.69568},
+            zoom: 14
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.45659, lng: -122.69568},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>
