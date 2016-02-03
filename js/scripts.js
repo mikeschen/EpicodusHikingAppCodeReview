@@ -1,4 +1,3 @@
-
 var Hikes = {
   angelsrest: ["medium", "medium", "medium", "high"],
   beaconrock: ["medium", "easy", "short", "high"],
