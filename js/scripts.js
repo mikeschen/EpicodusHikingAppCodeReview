@@ -1,14 +1,14 @@
 var Hikes = {
   angelsrest: ["medium", "medium", "medium", "high"],
-  beaconrock: ["medium", "easy", "short", "high"],
-  coopersspur: ["far", "difficult", "long", "moderate"],
-  icecaves: ["far", "difficult", "short", "low"],
+  beacon: ["medium", "easy", "short", "high"],
+  cooperspur: ["far", "difficult", "long", "moderate"],
+  ice-caves: ["far", "difficult", "short", "low"],
   lacamas: ["medium", "easy", "long", "moderate"],
-  lookoutmtn: ["far", "easy", "short", "moderate"],
-  macleay: ["short", "medium", "medium", "moderate"],
+  lookout-mtn: ["far", "easy", "short", "moderate"],
+  mcleary: ["short", "medium", "medium", "moderate"],
   multnomah: ["medium", "medium", "short", "high"],
-  trailof10falls: ["far", "easy", "long", "high"],
-  triplefalls: ["medium", "medium", "medium", "moderate"],
+  trailoftenfalls: ["far", "easy", "long", "high"],
+  triple-falls: ["medium", "medium", "medium", "moderate"],
   tryon: ["short", "easy", "short", "high"],
 };
 
