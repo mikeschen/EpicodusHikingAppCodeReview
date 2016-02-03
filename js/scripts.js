@@ -1,22 +1,22 @@
 var Hikes = {
   angelsrest: ["medium", "medium", "medium", "high"],
-  beaconrock: ["medium", "easy", "short", "high"],
-  coopersspur: ["far", "difficult", "long", "moderate"],
+  beacon: ["medium", "easy", "short", "high"],
+  cooperspur: ["far", "difficult", "long", "moderate"],
   icecaves: ["far", "difficult", "short", "low"],
   lacamas: ["medium", "easy", "long", "moderate"],
   lookoutmtn: ["far", "easy", "short", "moderate"],
-  macleay: ["short", "medium", "medium", "moderate"],
+  mcleary: ["short", "medium", "medium", "moderate"],
   multnomah: ["medium", "medium", "short", "high"],
-  trailof10falls: ["far", "easy", "long", "high"],
+  trailoftenfalls: ["far", "easy", "long", "high"],
   triplefalls: ["medium", "medium", "medium", "moderate"],
   tryon: ["short", "easy", "short", "high"],
 };
 
 var nameHike = [];
 
-function arraysEqual(testHike, Hikes) {
+function arraysEqual(hikeParametersArray, Hikes) {
   for (hike in Hikes) {
-    if (testHike.join() === Hikes[hike].join()) {
+    if (hikeParametersArray.join() === Hikes[hike].join()) {
       nameHike.push(hike);
     }
   }
@@ -30,15 +30,18 @@ function randomHike(nameHike) {
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-
+    var hike = [];
     var hikeParametersArray = [];
-    $("select:selected").each(function() {
+    console.log(hikeParametersArray);
+    $("select option:selected").each(function() {
       hikeParametersArray.push($(this).val());
+      console.log(hikeParametersArray);
     });
     var compareHikes = arraysEqual(hikeParametersArray, Hikes);
     console.log(compareHikes);
-    var hike = randomHike(compareHikes);
-    window.location = "../hikes/" + hike + ".html";
+    hike = randomHike(compareHikes);
+    console.log(hike);
+    document.location = "../hikes/" + hike + ".html";
 
   });
 });
