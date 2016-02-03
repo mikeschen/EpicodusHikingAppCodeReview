@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Angel's Rest</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Angel's Rest</h1>
+      <p></p>
+    </div>
+      <p class="details">Angel's Rest is an exposed bluff on the Western end of the Columbia River Gorge. This summit is characterized by a long, rocky spine surrounded on three sides by cliffs, boasting a striking 270 degree view. The real draw, however, is the perspective of the river below - like you're on a balcony over a great auditorium. Its near-2000 foot prominence, and its proximity to the Columbia River give you the false sensation that you could dive from the summit to the water below!</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Angel's_Rest_Hike">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Moderate, 4.8 miles round trip</li>
+          <li>Sights: A 270 degree view of the Columbia Gorge.</li>
+          <li>Popularity: High</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: approximately 30 minutes (27 Miles from Portland)</li>
+          <li>Get on I-84 E</li>
+          <li>Take Exit 28 (clearly marked)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/angelsrest.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.5645631, lng: -122.15453},
+            zoom: 13
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.5646, lng: -121.1545},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>

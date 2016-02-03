@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Mirror Lake</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Mirror Lake</h1>
+      <p></p>
+    </div>
+      <p class="details">The Mirror Lake trail has the misfortune of being one of the few hikes accessible directly from Highway 26, and thus suffers a crush of visitors on weekends. The attention is well-deserved: the always well-graded trail takes you past a picture-postcard views of Mount Hood and rugged Tom Dick and Harry Mountain, towering above Mirror Lake.</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Mirror_lake">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Easy, 3 miles round trip</li>
+          <li>Sights: Beautiful views of Mt. Hood and Tom Dick and Harry Mountain reflected upon Mirror Lake.</li>
+          <li>Popularity: High</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: approximately 90 minutes (54 Miles from Portland)</li>
+          <li>Follow I-84 E/U.S. 30 E and I-205 S to Clackamas County. Take exit 14 from I-205 S</li>
+          <li>Get on US-26 E/Mt Hood Hwy in Boring from SE Sunnyside Rd and OR-212 E/SE Hwy 212</li>
+          <li>Merge onto US-26 E/Mt Hood Hwy
+              Destination will be on the right</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/MirrorLake.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.2974, lng: -121.7934},
+            zoom: 15
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.2974, lng: -121.7934},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+
+</html>

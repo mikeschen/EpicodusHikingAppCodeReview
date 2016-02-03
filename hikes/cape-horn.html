@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Cape Horn Lookout</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Cape Horn Lookout</h1>
+    </div>
+      <p class="details">The Cape Horn Trail is a new trail and one of the closest Gorge trails to the Portland-Vancouver metropolitan area. It features gorgeous views, rocky crags, streams and two waterfalls. The trail is very well signed. There are both metal stakes and wooden signs at each junction.</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Cape_Horn_Loop_Hike">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Moderate, 8 Miles Round-Trip</li>
+          <li>Sights: Views of the Columbia River and Multnomah Falls, Waterfalls</li>
+          <li>Popularity: July - January</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 30 minutes (31 miles from downtown)</li>
+          <li>Take I-205 into Washington and onto Highway 14 E</li>
+          <li>At milepost 25, look for the parking lot that marks the trailhead</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/cape-horn.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.5726, lng: -122.1950},
+            zoom: 12
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.5726, lng: -122.1950},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>

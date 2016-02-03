@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Lookout Mountain</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Lookout Mountain</h1>
+    </div>
+      <p class="details">At over 6,500 feet, Lookout Mountain is much higher than most of the smaller peaks that surround Mount Hood. In fact, it is the second highest peak in the Mt. Hood National Forest. The added elevation brings broad meadows, expansive views, alpine wildflowers and ancient whitebark pines to the scene. The view of Mount Hood, just seven miles to the west, is from a unique perspective that reveals the massive bulk of the mountain</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Lookout_Mountain">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Easy, 2.5 Miles Round-Trip</li>
+          <li>Sights: Views of the Cascade Range, wildflowers, Central Oregon desert</li>
+          <li>Popularity: Moderate</li>
+          <li>Open: All Year</li>
+        </ul>
+        <ul>Fees:
+          <li>$5 NW Pass (Available at the trailhead)</li>
+        </ul>
+
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 120 minutes from downtown</li>
+          <li>Get on I-84 E to Hood River</li>
+          <li>Take Highway 35 S towards Mt. Hood for 25 miles.</li>
+          <li>At MilePost 71 turn left, onto paved FS 44 to Lookout Mountain</li>
+          <li>Continue another 3.7 miles, turn right at the "High Prairie" sign onto gravel FS 4410</li>
+          <li>Continue for 4.7 miles on this road, until you reach a T-junction at which you'll turn left.</li>
+          <li>Continue on this road for a few hundred yards to the trailhead. </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/lookout.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.3425, lng: -121.5242},
+            zoom: 10
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.3425, lng: -121.5242},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>

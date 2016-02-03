@@ -8,8 +8,51 @@
     <title>Let's Hike!</title>
   </head>
   <body>
+
     <div class="container">
+    <div class="jumbotron">
+      <h1>Take A Hike!</h1>
+    </div>
+    <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="distance">Select distance from Portland (Miles):</label>
+        <select class="form-control" id="distance">
+          <option>&#62; 20</option>
+          <option>20-40</option>
+          <option>&#60; 40</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="distance">What's your exertion level?</label>
+        <select class="form-control" id="difficulty">
+          <option>Mall walker</option>
+          <option>Moderate</option>
+          <option>Like climbing Mt. Everest</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="distance">Round Trip Length (miles):</label>
+        <select class="form-control" id="attractions">
+          <option>&#62; 3</option>
+          <option>3-6</option>
+          <option>7 &#60;</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="distance">Do you want to see other people? </label>
+        <select class="form-control" id="popularity">
+          <option>I don't want to see anyone</option> <!-- high -->
+          <option>Some</option> <!-- moderate -->
+          <option>Yes!</option> <!-- low -->
+        </select>
+      </div>
 
     </div>
+    <button type="submit" class="btn center-block custom">Find your Hike</button>
+    </form>
   </body>
 </html>

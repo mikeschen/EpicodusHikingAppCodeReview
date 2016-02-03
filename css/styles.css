@@ -1,0 +1,58 @@
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  color: #2d862d;
+}
+
+body {
+  margin-bottom: 30px;
+}
+
+img {
+  width: 500px;
+  height: 430px;
+}
+
+ul {
+  font-style: italic;
+}
+
+ul li {
+  font-style: normal;
+}
+
+.btn {
+  background-color: #eee;
+  color: #2d862d;
+}
+
+button:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.col-sm-6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin: 20px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-image: url(../images/hike2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#map {
+  width: 500px;
+  height: 430px;
+}

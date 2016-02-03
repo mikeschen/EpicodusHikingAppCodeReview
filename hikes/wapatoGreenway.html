@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Wapato Greenway Loop</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Sauvie's Island</h1>
+      <p>Wapato Greenway Loop</p>
+    </div>
+      <p class="details">This loop trail, a great family stroll, leads around a seasonal lake along the Multnomah Channel and under tall cottonwoods. The area is part of the Wapato Access Greenway State Park, which absolves you of the need for a Sauvie Island Wildlife Area parking permit. Waterfowl congregate on the lake and you will almost certainly see signs of beaver activity. Bring binoculars!</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Wapato_Greenway_Loop_Hike">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Easy, 2.2 miles round trip</li>
+          <li>Sights: Wildlife such as birds and beavers. </li>
+          <li>Popularity: High</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: approximately 20 minues (13 Miles from Portland)</li>
+          <li>Get on I-405 N.  Follow I-84 E/U.S. 30 E and I-205 S to Clackamas County. Take exit 14 from I-205 S</li>
+          <li>Follow U.S. 30 W to NW Sauvie Island Rd/NW Sauvie Island Bridge</li>
+          <li>Turn right onto NW Sauvie Island Rd/NW Sauvie Island Bridge</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/Wapato.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.66022, lng: -122.83859},
+            zoom: 14
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+
+</html>

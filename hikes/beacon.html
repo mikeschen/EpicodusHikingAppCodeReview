@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Beacon Rock</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Beacon Rock</h1>
+    </div>
+      <p class="details">Beacon Rock is the plug of an ancient volcano. Some experts feel it's the eroded remains of an older mountain and some feel it's a relatively intact volcanic plug that never broke the surface. In either event, the ice age Missoula Floods scored away the loose material leaving a freestanding monolith that is said by some to be the second largest in the world, although people in other areas of the world disagree.</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Beacon_Rock">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-4">
+        <ul>Trail Aspects:
+          <li>Exertion: Easy, 2 Mile Round Trip</li>
+          <li>Sights: Views of the Columbia Gorge</li>
+          <li>Popularity: High</li>
+          <li>Open: All Year</li>
+        </ul>
+        <ul>Fees:
+          <li>$10 Day-Use Fee (Available at the trailhead)</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <ul>Ammenities:
+          <li>Bathrooms</li>
+          <li>Boat Launch</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 47 minutes (35 Miles from Portland)</li>
+          <li>Get on I-205, cross to the Washington side and take Highway 14 towards Hood River</li>
+          <li>Stay on the highway for 35 miles</li>
+          <li>Park is well-marked, follow the signs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/beacon.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.6276, lng: -122.0208},
+            zoom: 16
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.6276, lng: -122.0208},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>

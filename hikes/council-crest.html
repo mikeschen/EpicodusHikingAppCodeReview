@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Council Crest</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Council Crest</h1>
+      <p></p>
+    </div>
+      <p class="details">Council Crest is thought to be the highest point in Portland at 1,073 feet above sea level. Originally known as Talbot's Mountain after its pioneer settlers, it has also been known as Glass Hill and later as Fairmount, the name of the road that encircles it. According to legend, Council Crest got its name because it was here where Native Americans held meetings and built signal fires.</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Angel's_Rest_Hike">Plan Your Trip</a>
+      </p>
+    <div class="row">
+      <div class="col-sm-4">
+        <ul>Trail Aspects:
+          <li>Exertion: Moderate, 3.3 miles round trip</li>
+          <li>Sights: Beautiful views of downtown Portland.</li>
+          <li>Popularity: High</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <ul>Ammenities:
+          <li>Bus Line: 8, 54</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <ul>Directions From Portland:
+          <li>Travel Time: approximately 16 minutes (4 Miles from Portland)</li>
+          <li>Get on SW Broadway heading S</li>
+          <li>Turn left onto SW Greenway Ave</li>
+          <li>Turn right onto SW Council Crest Dr.</li>
+          <li>Turn right to stay on SW Council Crest Dr, the destination will be on your left</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/council-crest.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.5001, lng: -122.7093},
+            zoom: 13
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.5001, lng: -122.7093},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>
