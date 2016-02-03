@@ -60,3 +60,7 @@ select:invalid {
   width: 500px;
   height: 430px;
 }
+
+.btn {
+  margin-top: 15px;
+}
