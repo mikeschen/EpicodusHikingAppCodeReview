@@ -38,5 +38,7 @@ $(document).ready(function() {
     var compareHikes = arraysEqual(hikeParametersArray, Hikes);
     console.log(compareHikes);
     var hike = randomHike(compareHikes);
+    window.location = hike + ".html";
+
   });
 });
