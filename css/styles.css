@@ -34,6 +34,10 @@ button:hover {
   color: black;
 }
 
+select:invalid {
+  color: gray;
+}
+
 .col-sm-6 {
   margin-top: 20px;
   margin-bottom: 20px;

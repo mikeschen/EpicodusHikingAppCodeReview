@@ -17,7 +17,8 @@
     <form>
       <div class="form-group">
         <label for="distance">Do you have access to a car?</label>
-        <select class="form-control" id="distance">
+        <select required class="form-control" id="distance">
+          <option value="" disabled selected hidden>Car?</option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
@@ -25,7 +26,8 @@
 
       <div class="form-group">
         <label for="distance">What's your exertion level?</label>
-        <select class="form-control" id="difficulty">
+        <select required class="form-control" id="difficulty">
+          <option value="" disabled selected hidden>Exertion?</option>
           <option value="easy">Mall walker</option>
           <option value="hard">Like climbing Mt. Everest</option>
         </select>
@@ -33,7 +35,8 @@
 
       <div class="form-group">
         <label for="distance">Round Trip Length (miles):</label>
-        <select class="form-control" id="attractions">
+        <select required class="form-control" id="attractions">
+          <option value="" disabled selected hidden>Distance?</option>
           <option value="short">&#62; 5</option>
           <option value="long">5 &#60;</option>
         </select>
@@ -41,7 +44,8 @@
 
       <div class="form-group">
         <label for="distance">Do you want to see other people? </label>
-        <select class="form-control" id="popularity">
+        <select required class="form-control" id="popularity">
+          <option value="" disabled selected hidden>People?</option>
           <option value="low">I don't want to see anyone</option> <!-- low -->
           <option value="high">I want to see everyone!</option> <!-- high -->
         </select>
