@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Rocky Butte</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Rocky Butte</h1>
+    </div>
+      <p class="details">Rocky Butte, one of Portland's Boring volcanoes, lay in the direct path of the Bretz or Missoula Floods, some of the largest known on the planet, which blasted down the Columbia Gorge from what is now Montana over a period of about 2,000 years until about 13,000 B.C. The eastern face of the cinder cone was extensively eroded as the Portland area went under 400 feet of water. The west side of Rocky Butte, now known as the Alameda Ridge, became a collection of debris from hundreds of miles away. The northeast side of the butte also hosted a rock quarry, which gave rise to its current name; previous to this, it was known as Wiberg Butte. Stone from the quarry was used in the construction of the former Multnomah County Jail, located nearby and demolished to make way for the freeway. Cliff faces on the northeast side of the butte hold over 100 climbing routes, and bouldering practice can be enjoyed on the stone walls at the summit. The trail route described below crosses public lands belonging to state and city parks and the Oregon Department of Transportation.</p>
+
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Rocky_Butte_Hike">Plan Your Trip</a>
+
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Moderate, 3.2 Miles Round-Trip</li>
+          <li>Sights: Views of the west Portland skyline, Columbia river, and several mountains at the summit.</li>
+          <li>Popularity: low</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 10 minutes (6 Miles from center Portland)</li>
+          <li>Drive along I-84 E/U.S. 30 E and NE Sandy Blvd. Turn right.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/RockyButte.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.55325, lng: -122.57468},
+            zoom: 14
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.55325, lng: -122.57468},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>
