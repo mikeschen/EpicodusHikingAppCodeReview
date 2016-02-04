@@ -51,12 +51,12 @@
         var map;
         function initMap() {
           var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 45.9610, lng: -122.6326},
-            zoom: 14
+            center: {lat: 45.5884, lng: -122.0784},
+            zoom: 13
           });
 
           var marker = new google.maps.Marker({
-            position: {lat: 45.9610, lng: -122.6326},
+            position: {lat: 45.5884, lng: -122.0784},
             map: map,
             title: "Triple Falls"
           });
@@ -65,9 +65,13 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
       async defer></script>
     </div>
-    <!-- </div> -->
 
-    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+    <div class="container">
+      <button class="btn center-block custom" href="../index.html">Find Another Hike</button>
+    </div>
+
+    <footer>
+    </footer>
 
   </body>
 </html>

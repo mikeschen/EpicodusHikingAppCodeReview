@@ -56,12 +56,12 @@
         var map;
         function initMap() {
           var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 45.6365, lng: -121.5510},
-            zoom: 11
+            center: {lat: 45.6365, lng: -121.9194},
+            zoom: 12
           });
 
           var marker = new google.maps.Marker({
-            position: {lat: 45.6365, lng: -121.5510},
+            position: {lat: 45.6365, lng: -121.9194},
             map: map,
           });
         }
@@ -69,9 +69,13 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
       async defer></script>
     </div>
-    <!-- </div> -->
 
-    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+    <div class="container">
+      <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+    </div>
+
+    <footer>
+    </footer>
 
   </body>
 </html>

@@ -52,12 +52,12 @@
         var map;
         function initMap() {
           map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 45.5645631, lng: -122.15453},
-            zoom: 13
+            center: {lat: 45.2250, lng: -121.6718},
+            zoom: 10
           });
 
           var marker = new google.maps.Marker({
-            position: {lat: 45.5645, lng: -121.1545},
+            position: {lat: 45.2250, lng: -121.6718},
             map: map,
           });
         }
@@ -67,8 +67,11 @@
     </div>
     <!-- </div> -->
 
-    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+    <div class="container">
+      <button class="btn center-block custom" href="../index.html">Find Another Hike</button>
+    </div>
 
+    <footer>
+    </footer>
   </body>
-
 </html>
