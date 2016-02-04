@@ -22,7 +22,7 @@ var Hikes = {
   trailoftenfalls: ["no", "easy", "long", "high"],
   triplefalls: ["no", "easy", "short", "high"],
   tryon: ["yes", "easy", "short", "high"],
-  wapatoGreenway: ["no", "easy", "short", "high"],
+  wapatoGreenway: ["no", "easy", "short", "high"]
 };
 
 var nameHike = [];
@@ -38,24 +38,32 @@ function arraysEqual(hikeParametersArray, Hikes) {
 
 function randomHike(nameHike) {
   return nameHike[Math.floor(Math.random()*nameHike.length)];
+};
+
+function randomProperty(Hikes) {
+  var temp_key;
+  var keys = [];
+  for(temp_key in Hikes) {
+    keys.push(temp_key);
+  }
+  return keys[Math.floor(Math.random()*keys.length)];
 }
 
 $(document).ready(function() {
-  $("form").submit(function(event) {
-    event.preventDefault();
+  $("form#findhike").submit(function(event) {
     var hike = [];
     var hikeParametersArray = [];
-    console.log(hikeParametersArray);
     $("select option:selected").each(function() {
       hikeParametersArray.push($(this).val());
-      console.log(hikeParametersArray);
     });
     var compareHikes = arraysEqual(hikeParametersArray, Hikes);
-    console.log(compareHikes);
     hike = randomHike(compareHikes);
-    console.log(hike);
     window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + hike + ".html";
-
-
+    event.preventDefault();
   });
+    $("form#feelinglucky").submit(function(event) {
+    var feelingLucky = randomProperty(Hikes);
+    window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + feelingLucky + ".html";
+    event.preventDefault();
+});
 });
