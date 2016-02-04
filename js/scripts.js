@@ -37,7 +37,8 @@ var Hikes = {
   marquamTrailCouncil: ["no", "difficult", "long", "low"],
   firelane15: ["no", "difficult", "short", "low"],
   rockyButte: ["no", "difficult", "short", "low"],
-  mapleWildwoodLoop: ["no", "difficult", "long", "high"]
+  mapleWildwoodLoop: ["no", "difficult", "long", "high"],
+  warriorPoint: ["no", "difficult", "long", "high"]
 };
 
 var nameHike = [];
