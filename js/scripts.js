@@ -3,7 +3,6 @@ var Hikes = {
   beacon: ["yes", "easy", "short", "high"],
   capehorn: ["yes", "difficult", "long", "high"],
   cooperspur: ["yes", "difficult", "long", "high"],
-
   councilcrest: ["no", "difficult", "short", "high"],
   drycreek: ["yes", "difficult", "long", "low"],
   elowah: ["yes", "easy", "short", "low"],
@@ -22,7 +21,6 @@ var Hikes = {
   silverStar: ["yes", "difficult", "long", "low"],
   sleepingbeauty: ["yes", "difficult", "short", "high"],
   tillamook: ["yes", "easy", "long", "high"],
-
   trailoftenfalls: ["yes", "easy", "long", "high"],
   triplefalls: ["yes", "easy", "short", "high"],
   tryon: ["no", "easy", "short", "high"],
