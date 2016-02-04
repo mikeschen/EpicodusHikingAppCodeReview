@@ -29,7 +29,6 @@ var nameHike = [];
 
 function arraysEqual(hikeParametersArray, Hikes) {
   for (hike in Hikes) {
-      debugger;
     if (hikeParametersArray.join() === Hikes[hike].join()) {
       nameHike.push(hike);
     }

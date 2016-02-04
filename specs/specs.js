@@ -1,15 +1,15 @@
 
 describe('Hike', function() {
   it("creates a new hike suggestion with the given drive, distance, popularity, difficulty", function() {
-    var testHike =  new Hike(10, 5, "medium", "hard");
-    expect(testHike.drive).to.equal(10);
-    expect(testHike.distance).to.equal(5);
-    expect(testHike.views).to.equal("waterfall");
-    expect(testHike.popularity).to.equal("medium");
-    expect(testHike.difficulty).to.equal("hard");
+    Hikes.newhike = ["no","hard","short","high"];
+    expect(Hikes.newhike).to.eql(["no","hard","short","high"]);
   });
-  it("creates a suggestion of Multnomah Falls when it equals waterfall and viewpoint views and difficulty medium and popularity high"), function() {
-      expect(testHike).to.equal("multnomah");
-
-  }
+  it("returns an array of hikes that match the user input", function() {
+    var testHike = ["no", "easy", "short", "high"];
+    expect(arraysEqual(testHike)).to.eql(nameHike);
+  });
+  it("returns a random hike from a list of matches", function() {
+    var testHike = ["no", "easy", "short", "high"];
+    expect(randomHike(nameHike)).to.eql(nameHike[Math.floor(Math.random()*nameHike.length)]);
+  });
 });
