@@ -34,7 +34,7 @@ var Hikes = {
   marshallPark: ["no", "easy", "short", "low"],
   tolindaRidge: ["no", "easy", "long", "low"],
   pittockMansion: ["no", "easy", "long", "high"],
-  marquamTrailCouncil: ["no", "difficult", "long", "low"],
+  marquamTrailCouncilCrest: ["no", "difficult", "long", "low"],
   firelane15: ["no", "difficult", "short", "low"],
   rockyButte: ["no", "difficult", "short", "low"],
   mapleWildwoodLoop: ["no", "difficult", "long", "high"],
