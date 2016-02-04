@@ -22,10 +22,10 @@ var Hikes = {
   trailoftenfalls: ["no", "easy", "long", "high"],
   triplefalls: ["no", "easy", "short", "high"],
   tryon: ["yes", "easy", "short", "high"],
-  wapatoGreenway: ["no", "easy", "short", "high"],
+  wapatoGreenway: ["no", "easy", "short", "high"]
 };
 
-var nameHike = ["angelsrest", "multnomah", "silverStar"]; //add all hikes
+// var nameHike = ["angelsrest", "beacon", "capehorn", "cooperspur", "councilcrest", "drycreek", "elowah", "eagleCreek", "fallscreek", "icecaves", "lacamas", "lookoutmtn", "marquam", "mcleary", "memalooselake", "mirrorlake", "multnomah", "silverStar", "sleepingbeauty", "tillamook", "trailoftenfalls", "triplefalls", "tryon", "wapatoGreenway"];
 
 function arraysEqual(hikeParametersArray, Hikes) {
   for (hike in Hikes) {
@@ -40,7 +40,7 @@ function randomHike(nameHike) {
   return nameHike[Math.floor(Math.random()*nameHike.length)];
 };
 
-var randomProperty = function (obj) {
+function randomProperty(obj) {
     var keys = Object.keys(obj)
     return obj[keys[ keys.length * Math.random() << 0]];
     console.log(keys);
@@ -58,11 +58,11 @@ $(document).ready(function() {
     hike = randomHike(compareHikes);
     window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + hike + ".html";
   });
-  $("#continue").click(function(event) {
-    event.preventDefault();
-    var feelingLucky = randomProperty(Hikes);
-    console.log(feelingLucky);
+  // $("#continue").click(function(event) {
+  //   event.preventDefault();
+  //   var feelingLucky = randomProperty(Hikes);
+  //   console.log(feelingLucky);
 
-    window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + feelingLucky + ".html";
-  });
+  //   window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + feelingLucky + ".html";
+  // });
 });
