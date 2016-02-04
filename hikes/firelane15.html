@@ -16,36 +16,40 @@
          padding: 0;
        }
     </style>
-    <title>Cape Horn Lookout</title>
+    <title>Firelane 15</title>
   </head>
 
   <body>
     <div class="jumbotron">
-      <h1>Cape Horn Lookout</h1>
+      <h1>Firelane 15</h1>
+
     </div>
-      <p class="details">The Cape Horn Trail is a new trail and one of the closest Gorge trails to the Portland-Vancouver metropolitan area. It features gorgeous views, rocky crags, streams and two waterfalls. The trail is very well signed. There are both metal stakes and wooden signs at each junction.</p>
-      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Cape_Horn_Loop_Hike">Plan Your Trip</a>
+      <p class="details">Located at the northwest end of Forest Park, this loop hike will give you a good steep hike with a chance for some solitude. Like most hikes in this park, the route is predominately in the shade of a mature Douglas-fir forest, but the short sections along the powerline access roads provide views to the northeast. On clear days, Mt St Helens, Mt Rainier, the Columbia River and Sauvie Island can been seen on this route.</p>
+
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Firelane_15_Hike">Plan Your Trip</a>
+
       </p>
     <div class="row">
       <div class="col-sm-6">
         <ul>Trail Aspects:
-          <li>Exertion: Moderate, 8 Miles Round-Trip</li>
-          <li>Sights: Views of the Columbia River and Multnomah Falls, Waterfalls</li>
-          <li>Popularity: July - January</li>
+          <li>Exertion: Moderate, 4.2 Miles Round-Trip</li>
+          <li>Sights: Views of Mt. Hood, Mt. St Helens, Mt. Ranier, the Columbia River and Sauvie Island</li>
+          <li>Popularity: Low</li>
           <li>Open: All Year</li>
         </ul>
       </div>
       <div class="col-sm-6">
         <ul>Directions From Portland:
-          <li>Travel Time: Approximately 30 minutes (31 miles from downtown)</li>
-          <li>Take I-205 into Washington and onto Highway 14 E</li>
-          <li>At milepost 25, look for the parking lot that marks the trailhead</li>
+          <li>Travel Time: Approximately 15 minutes (10 Miles from centerPortland)</li>
+          <li>Get on I-405 N</li>
+          <li>Take U.S. 30 W to NW Germantown Rd</li>
+          <li>Continue on NW Germantown Rd. Drive to NW Skyline Blvd</li>
         </ul>
       </div>
     </div>
 
     <div class="col-sm-6">
-      <img src="../images/cape-horn.jpg">
+      <img src="../images/firelane15.jpg">
     </div>
 
     <div class="col-sm-6" id="map">
@@ -53,12 +57,12 @@
         var map;
         function initMap() {
           var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 45.5726, lng: -122.1950},
-            zoom: 12
+            center: {lat: 45.59581, lng: -122.82419},
+            zoom: 16
           });
 
           var marker = new google.maps.Marker({
-            position: {lat: 45.5726, lng: -122.1950},
+            position: {lat: 45.59581, lng: -122.82419},
             map: map,
           });
         }
@@ -68,11 +72,7 @@
     </div>
     <!-- </div> -->
 
-    <div class="container">
-      <button class="btn center-block custom" href="../index.html">Find Another Hike</button>
-    </div>
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
 
-    <footer>
-    </footer>
   </body>
 </html>

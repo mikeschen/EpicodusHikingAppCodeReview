@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
     <script src="../js/jquery-1.12.0.js"></script>
@@ -32,6 +34,8 @@
           <li>Popularity: Moderate</li>
           <li>Open: All Year</li>
         </ul>
+      </div>
+      <div class="col-sm-4">
         <ul>Ammenities:
           <li>Bathrooms</li>
           <li>Picnic Area</li>
@@ -39,7 +43,7 @@
           <li>Wheelchair Access</li>
         </ul>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <ul>Directions From Portland:
           <li>Travel Time: Approximately 35 minutes from downtown (23 miles)</li>
           <li>Get on I-205 N to exit 27 to Highway 14 (towards Camus)</li>
@@ -63,7 +67,7 @@
         function initMap() {
           var map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: 45.6365, lng: -122.4597},
-            zoom: 14
+            zoom: 13
           });
 
           var marker = new google.maps.Marker({
@@ -75,9 +79,12 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
       async defer></script>
     </div>
-    <!-- </div> -->
 
-    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+    <div class="container">
+      <button class="btn center-block custom" href="../index.html">Find Another Hike</button>
+    </div>
 
+    <footer>
+    </footer>
   </body>
 </html>

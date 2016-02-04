@@ -16,46 +16,44 @@
          padding: 0;
        }
     </style>
-    <title>Multnomah Falls</title>
+    <title>Powell Butte</title>
   </head>
 
   <body>
     <div class="jumbotron">
-      <h1>Multnomah Falls</h1>
+      <h1>Powell Butte</h1>
     </div>
-      <p class="details">A waterfall as magnificent and memorable as any in the country is located just a 30- minute drive outside of Portland. Visiting Multnomah Falls, a 611-foot-tall roaring, awe-inspiring cascade of icy water, lets you experience the power and beauty of nature up close and with ease. From the parking area off of I-84, a 5-minute walk is all that separates you from the exhilarating spray at the base of the falls.</p>
-
-      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Multnomah_Falls_Hike">Plan Your Trip</a>
-
+      <p class="details">Powell Butte Loop Trail is a 3.2 mile out and back trail located near Portland, OR that features a lake and is good for all skill levels. The trail offers a number of activity options and is accessible year-round. Dogs are also able to use this trail but must be kept on leash.</p>
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Powell_Butte_Perimeter_Loop_Hike">Plan Your Trip</a>
       </p>
     <div class="row">
       <div class="col-sm-4">
         <ul>Trail Aspects:
-          <li>Exertion: Moderate, 2.6 Miles Round-Trip</li>
-          <li>Sights: Waterfalls, View of the Columbia Gorge From the top of the Falls</li>
-          <li>Popularity: High</li>
+          <li>Exertion: Moderate, 3.3 Miles Round Trip</li>
+          <li>Sights: Wetlands, wildlife, wildflowers in the spring</li>
+          <li>Popularity: Moderate</li>
           <li>Open: All Year</li>
         </ul>
       </div>
       <div class="col-sm-4">
         <ul>Ammenities:
           <li>Bathrooms</li>
-          <li>Gift Shop</li>
-          <li>Lodge/Restaurant</li>
-          <li>US Forest Service Information Center</li>
+          <li>Bus Lines: 9, 4, MAX</li>
         </ul>
       </div>
       <div class="col-sm-4">
         <ul>Directions From Portland:
-          <li>Travel Time: Approximately 30 minutes (30 Miles from Portland)</li>
-          <li>Get on I-84 E</li>
-          <li>Take Exit 31 (clearly marked)</li>
+          <li>Travel Time: Approximately 40 minutes (12.4 Miles from Portland)</li>
+          <li>Get I-84 E</li>
+          <li>Take exit 6 for I-205</li>
+          <li>Keep right, follow signs for Glisan St./Stark St.</li>
+          <li>Turn right onto NE 162nd Ave, follow signs to your destination</li>
         </ul>
       </div>
     </div>
 
     <div class="col-sm-6">
-      <img src="../images/multnomah.jpg">
+      <img src="../images/powellButte.jpg">
     </div>
 
     <div class="col-sm-6" id="map">
@@ -63,12 +61,12 @@
         var map;
         function initMap() {
           var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 45.5760, lng: -122.1154},
-            zoom: 12
+            center: {lat: 45.4905, lng: -122.4971},
+            zoom: 14
           });
 
           var marker = new google.maps.Marker({
-            position: {lat: 45.5760, lng: -122.1154},
+            position: {lat: 45.4905, lng: -122.4971},
             map: map,
           });
         }
@@ -76,12 +74,9 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
       async defer></script>
     </div>
+    <!-- </div> -->
 
-    <div class="container">
-      <button class="btn center-block custom" href="../index.html">Find Another Hike</button>
-    </div>
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
 
-    <footer>
-    </footer>
   </body>
 </html>

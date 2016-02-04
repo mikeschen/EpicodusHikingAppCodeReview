@@ -7,8 +7,12 @@ a {
   color: #2d862d;
 }
 
-body {
+/*body {
   margin-bottom: 30px;
+}*/
+
+footer {
+  padding-bottom: 20px;
 }
 
 img {
