@@ -38,6 +38,10 @@ button:hover {
   color: black;
 }
 
+select:invalid {
+  color: gray;
+}
+
 .col-sm-6 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -59,4 +63,8 @@ button:hover {
 #map {
   width: 500px;
   height: 430px;
+}
+
+.btn {
+  margin-top: 15px;
 }
