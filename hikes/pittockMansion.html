@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Tolinda-Ridge Trail</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Forest Park</h1>
+      <p>Pittock Mansion Hike</p>
+    </div>
+      <p class="details">This is an unusual entrance to Forest Park and takes you on a complete loop on some of the least traveled trails in the park's central section. Begin on the Tolinda Trail, which is named after a Camp Fire shelter that burned down in 1976. You will be rising up the Tualatin Hills almost to the crest and then descending to the St. John's Bridge using the Ridge Trail. As usual, the Wildwood Trail features prominently in the outing. Note that the lowest section of the Ridge Trail has, at times, become a conduit for transients who set up camp in the woods above the bridge. A half-mile road section ties up the loop.</p>
+
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Pittock_Mansion_Hike">Plan Your Trip</a>
+
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Easy, 5.1 Miles Round-Trip</li>
+          <li>Sights: Incredble views of Mt. Hood and the city. This hike alo takes you to historic Pittock Mansion.</li>
+          <li>Popularity: High</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 8 minutes (2.5 Miles from center of Portland)</li>
+          <li>Take NW Upshur St to your destination</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/pittockMansion.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.53611, lng: -122.71248},
+            zoom: 14
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.53611, lng: -122.71248},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>
