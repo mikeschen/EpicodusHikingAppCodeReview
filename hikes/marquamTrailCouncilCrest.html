@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Marquam Trail Council Crest Hike</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Marquam Trail Council Crest Hike</h1>
+    </div>
+      <p class="details">Easily one of Portland's best close-in hikes, the Marquam Trail is as pleasant as any in Forest Park and features an outstanding four-mountain view from Council Crest Park, once the site of a popular amusement park. The hike has about 1100 feet of total elevation gain, so it's perfect for anyone looking for a good workout without expending the time or gas to reach hikes farther afield. It's also a perfect winter hike for those rainy, foggy days when you can't buy a view in the Columbia Gorge.</p>
+
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Marquam_Trail_to_Council_Crest_Hike">Plan Your Trip</a>
+
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Moderate, 5.8 Miles Round-Trip</li>
+          <li>Sights: Wildlife, Old Growth, Views of 4 different mountains.</li>
+          <li>Popularity: Low</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 10 minutes (4.7 Miles from center Portland)</li>
+          <li>Follow Ross Island Bridge and Pacific Hwy W to SW Hamilton St</li>
+          <li>Continue on SW Hamilton St. Drive to SW Terwilliger Blvd.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/marquamTrail.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.49107, lng: -122.68712},
+            zoom: 14
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.49107, lng: -122.68712},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+    <!-- </div> -->
+
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
+
+  </body>
+</html>
