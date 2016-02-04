@@ -25,7 +25,7 @@ var Hikes = {
   wapatoGreenway: ["no", "easy", "short", "high"],
 };
 
-var nameHike = [];
+var nameHike = ["angelsrest", "multnomah", "silverStar"]; //add all hikes
 
 function arraysEqual(hikeParametersArray, Hikes) {
   for (hike in Hikes) {
@@ -38,24 +38,31 @@ function arraysEqual(hikeParametersArray, Hikes) {
 
 function randomHike(nameHike) {
   return nameHike[Math.floor(Math.random()*nameHike.length)];
-}
+};
+
+var randomProperty = function (obj) {
+    var keys = Object.keys(obj)
+    return obj[keys[ keys.length * Math.random() << 0]];
+    console.log(keys);
+};
 
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     var hike = [];
     var hikeParametersArray = [];
-    console.log(hikeParametersArray);
     $("select option:selected").each(function() {
       hikeParametersArray.push($(this).val());
-      console.log(hikeParametersArray);
     });
     var compareHikes = arraysEqual(hikeParametersArray, Hikes);
-    console.log(compareHikes);
     hike = randomHike(compareHikes);
-    console.log(hike);
     window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + hike + ".html";
+  });
+  $("#continue").click(function(event) {
+    event.preventDefault();
+    var feelingLucky = randomProperty(Hikes);
+    console.log(feelingLucky);
 
-
+    window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + feelingLucky + ".html";
   });
 });
