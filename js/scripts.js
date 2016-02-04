@@ -29,6 +29,7 @@ var nameHike = [];
 
 function arraysEqual(hikeParametersArray, Hikes) {
   for (hike in Hikes) {
+      debugger;
     if (hikeParametersArray.join() === Hikes[hike].join()) {
       nameHike.push(hike);
     }
@@ -61,9 +62,9 @@ $(document).ready(function() {
     window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + hike + ".html";
     event.preventDefault();
   });
-    $("form#feelinglucky").submit(function(event) {
+  $("form#feelinglucky").submit(function(event) {
     var feelingLucky = randomProperty(Hikes);
     window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + feelingLucky + ".html";
     event.preventDefault();
-});
+  });
 });
