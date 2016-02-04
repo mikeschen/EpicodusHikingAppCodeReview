@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="../js/scripts.js"></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+    </style>
+    <title>Warrior Point</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>Sauvie Island</h1>
+      <p>Warrior Point Hike</p>
+    </div>
+      <p class="details">Take a quiet, flat stroll out to the northern tip of Sauvie Island. You will be traveling through a state wildlife refuge, and visiting a small lighthouse. From the road, you will be able to access several viewpoints of the river, but there is no more continuous beach walking available. If you are prepared to bushwack a bit, there are a variety of ponds, sloughs and wetlands to the south of the access road. This area is former farmland, and you may also stumble across signs of previous human habitation such as concrete building foundations, chimneys and rusting metal machinery parts.</p>
+
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Warrior_Point_Hike">Plan Your Trip</a>
+
+      </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>Trail Aspects:
+          <li>Exertion: Moderate, 7.0 Miles Round-Trip</li>
+          <li>Sights: Views of the Columbia River, and old lighthouse</li>
+          <li>Popularity: High in the summer</li>
+          <li>Open: All Year</li>
+        </ul>
+      </div>
+
+      <div class="col-sm-6">
+        <ul>Directions From Portland:
+          <li>Travel Time: Approximately 35 minutes (25 Miles from Portland)</li>
+          <li>Take U.S. 30 W to NW Sauvie Island Rd/NW Sauvie Island Bridge</li>
+          <li>Drive to NW Reeder Rd in Columbia County</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../images/warriorPoint.jpg">
+    </div>
+
+    <div class="col-sm-6" id="map">
+      <script>
+        var map;
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.80859, lng:-122.79833},
+            zoom: 14
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 45.80859, lng: -122.79833},
+            map: map,
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzZaxXW8YZpK2o0AAUZFGcOM6IcHQTZIA&callback=initMap"
+      async defer></script>
+    </div>
+
+    <div class="container">
+      <button class="btn center-block custom" href="../index.html">Find Another Hike</button>
+    </div>
+
+    <footer>
+    </footer>
+  </body>
+</html>
