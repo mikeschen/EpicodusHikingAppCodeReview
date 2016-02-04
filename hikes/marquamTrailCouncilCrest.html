@@ -16,36 +16,38 @@
          padding: 0;
        }
     </style>
-    <title>Cape Horn Lookout</title>
+    <title>Marquam Trail Council Crest Hike</title>
   </head>
 
   <body>
     <div class="jumbotron">
-      <h1>Cape Horn Lookout</h1>
+      <h1>Marquam Trail Council Crest Hike</h1>
     </div>
-      <p class="details">The Cape Horn Trail is a new trail and one of the closest Gorge trails to the Portland-Vancouver metropolitan area. It features gorgeous views, rocky crags, streams and two waterfalls. The trail is very well signed. There are both metal stakes and wooden signs at each junction.</p>
-      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Cape_Horn_Loop_Hike">Plan Your Trip</a>
+      <p class="details">Easily one of Portland's best close-in hikes, the Marquam Trail is as pleasant as any in Forest Park and features an outstanding four-mountain view from Council Crest Park, once the site of a popular amusement park. The hike has about 1100 feet of total elevation gain, so it's perfect for anyone looking for a good workout without expending the time or gas to reach hikes farther afield. It's also a perfect winter hike for those rainy, foggy days when you can't buy a view in the Columbia Gorge.</p>
+
+      <p class="text-center"><a href="http://www.oregonhikers.org/field_guide/Marquam_Trail_to_Council_Crest_Hike">Plan Your Trip</a>
+
       </p>
     <div class="row">
       <div class="col-sm-6">
         <ul>Trail Aspects:
-          <li>Exertion: Moderate, 8 Miles Round-Trip</li>
-          <li>Sights: Views of the Columbia River and Multnomah Falls, Waterfalls</li>
-          <li>Popularity: July - January</li>
+          <li>Exertion: Moderate, 5.8 Miles Round-Trip</li>
+          <li>Sights: Wildlife, Old Growth, Views of 4 different mountains.</li>
+          <li>Popularity: Low</li>
           <li>Open: All Year</li>
         </ul>
       </div>
       <div class="col-sm-6">
         <ul>Directions From Portland:
-          <li>Travel Time: Approximately 30 minutes (31 miles from downtown)</li>
-          <li>Take I-205 into Washington and onto Highway 14 E</li>
-          <li>At milepost 25, look for the parking lot that marks the trailhead</li>
+          <li>Travel Time: Approximately 10 minutes (4.7 Miles from center Portland)</li>
+          <li>Follow Ross Island Bridge and Pacific Hwy W to SW Hamilton St</li>
+          <li>Continue on SW Hamilton St. Drive to SW Terwilliger Blvd.</li>
         </ul>
       </div>
     </div>
 
     <div class="col-sm-6">
-      <img src="../images/cape-horn.jpg">
+      <img src="../images/marquamTrail.jpg">
     </div>
 
     <div class="col-sm-6" id="map">
@@ -53,12 +55,12 @@
         var map;
         function initMap() {
           var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 45.5726, lng: -122.1950},
-            zoom: 12
+            center: {lat: 45.49107, lng: -122.68712},
+            zoom: 14
           });
 
           var marker = new google.maps.Marker({
-            position: {lat: 45.5726, lng: -122.1950},
+            position: {lat: 45.49107, lng: -122.68712},
             map: map,
           });
         }
@@ -68,11 +70,7 @@
     </div>
     <!-- </div> -->
 
-    <div class="container">
-      <button class="btn center-block custom" href="../index.html">Find Another Hike</button>
-    </div>
+    <button class="btn center-block custom"><a href="../index.html">Find Another Hike</a></button>
 
-    <footer>
-    </footer>
   </body>
 </html>
