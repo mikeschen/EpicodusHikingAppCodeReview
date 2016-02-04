@@ -50,8 +50,7 @@ function randomProperty(Hikes) {
 }
 
 $(document).ready(function() {
-  $("form").submit(function(event) {
-    event.preventDefault();
+  $("form#findhike").submit(function(event) {
     var hike = [];
     var hikeParametersArray = [];
     $("select option:selected").each(function() {
@@ -60,9 +59,11 @@ $(document).ready(function() {
     var compareHikes = arraysEqual(hikeParametersArray, Hikes);
     hike = randomHike(compareHikes);
     window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + hike + ".html";
+    event.preventDefault();
   });
-  //     $("#feelinglucky").click(function() {
-  //   var feelingLucky = randomProperty(Hikes);
-  //   window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + feelingLucky + ".html";
-  // });
+    $("form#feelinglucky").submit(function(event) {
+    var feelingLucky = randomProperty(Hikes);
+    window.location.href = "http://mikeschen.github.io/EpicodusHikingApp/hikes/" + feelingLucky + ".html";
+    event.preventDefault();
+});
 });

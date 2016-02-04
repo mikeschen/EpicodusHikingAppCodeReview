@@ -14,7 +14,7 @@
       <h1>Take A Hike!</h1>
     </div>
     <div class="container">
-    <form>
+    <form id="findhike">
       <div class="form-group">
         <label for="distance">Do you have access to a car?</label>
         <select required class="form-control" id="distance">
@@ -29,7 +29,7 @@
         <select required class="form-control" id="difficulty">
           <option value="" disabled selected hidden>Exertion?</option>
           <option value="easy">Mall walker</option>
-          <option value="hard">Like climbing Mt. Everest</option>
+          <option value="difficult">Like climbing Mt. Everest</option>
         </select>
       </div>
 
@@ -53,7 +53,9 @@
 
     </div>
     <button type="submit" class="btn center-block custom">Find your Hike</button>
-<!--     <button type="click" class="btn center-block" id = "feelinglucky">I'm Feeling Lucky!</button> -->
+    </form>
+    <form id="feelinglucky">
+    <button type="submit" class="btn center-block" id = "feelinglucky">I'm Feeling Lucky!</button>
     </form>
   </body>
 </html>
