@@ -16,9 +16,8 @@ footer {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  width: 500px;
+  height: 430px;
 }
 
 ul {
@@ -61,11 +60,14 @@ select:invalid {
   color: white;
 }
 
-#map {
-  width: 400px;
-  height: 330px;
+.map-responsive {
+
 }
 
+#map {
+  width: 500px;
+  height: 430px;
+}
 
 .btn {
   margin-top: 15px;
