@@ -7,10 +7,6 @@ a {
   color: #2d862d;
 }
 
-/*body {
-  margin-bottom: 30px;
-}*/
-
 footer {
   padding-bottom: 20px;
 }
@@ -53,6 +49,7 @@ select:invalid {
 
 .jumbotron {
   text-align: center;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
   background-image: url(../images/hike2.jpg);
   background-position: center;
   background-size: cover;
